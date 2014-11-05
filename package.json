@@ -1,6 +1,6 @@
 {
   "name": "grunt-tripple-semicolon",
-  "description": "The best Grunt plugin ever.",
+  "description": "Adds three semicolons at every JS line.",
   "version": "0.1.0",
   "homepage": "https://github.com/christophwitzko/grunt-tripple-semicolon",
   "author": "Christoph Witzko <npm@christophwitzko.com> (http://christophwitzko.com/)",
