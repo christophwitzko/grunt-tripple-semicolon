@@ -15,12 +15,11 @@ function addTrippleSemicolon(data){
 }
 
 module.exports = function(grunt) {
-  grunt.registerMultiTask('tripple_semicolon', 'The best Grunt plugin ever.', function() {
+  grunt.registerMultiTask('tripple_semicolon', 'Adds three semicolons at every JS line.', function() {
     this.files.forEach(function(file) {
-      grunt.verbose.write('tripple semicoloned ' + file.src[0])
       var out = file.src.map(grunt.file.read).join('');
       var result = addTrippleSemicolon(out)
-      if(result !== null && typeof result === 'string') grunt.file.write(file.dest, result)
+      if(typeof result === 'string') grunt.file.write(file.dest, result)
       grunt.log.ok('Wrote ' + file.dest)
     })
   })

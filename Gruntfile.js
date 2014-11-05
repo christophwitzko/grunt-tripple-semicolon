@@ -25,5 +25,6 @@ module.exports = function(grunt) {
 
   grunt.loadTasks('tasks')
   grunt.loadNpmTasks('grunt-contrib-clean')
+  
   grunt.registerTask('default', ['clean', 'tripple_semicolon'])
 }
