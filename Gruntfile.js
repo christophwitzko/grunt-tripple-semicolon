@@ -19,12 +19,23 @@ module.exports = function(grunt) {
           src: '**/*.js',
           dest: 'dest'
         }]
+      },
+      greek: {
+        files: [{
+          expand: true,
+          cwd: 'test',
+          src: '**/*.js',
+          dest: 'dest/greek'
+        }],
+        options: {
+          greek: true
+        }
       }
     }
   })
 
   grunt.loadTasks('tasks')
   grunt.loadNpmTasks('grunt-contrib-clean')
-  
+
   grunt.registerTask('default', ['clean', 'tripple_semicolon'])
 }
