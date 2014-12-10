@@ -31,6 +31,6 @@
     "gruntplugin"
   ],
   "dependencies": {
-    "fixmyjs": "^0.13.6"
+    "tripple-semicolon": "^1.1.0"
   }
 }
