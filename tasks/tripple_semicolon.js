@@ -10,9 +10,6 @@
 
 var trippleSemicolon = require('tripple-semicolon')
 
-var SEMICOLONS = ';;;';
-var GREEK = ';';
-
 module.exports = function(grunt) {
   grunt.registerMultiTask('tripple_semicolon', 'Adds three semicolons at every JS line.', function() {
     var options = this.options({
@@ -21,7 +18,7 @@ module.exports = function(grunt) {
 
     this.files.forEach(function(file) {
       var out = file.src.map(grunt.file.read).join('');
-      var result = trippleSemicolon(out, options.greek ? GREEK : SEMICOLONS)
+      var result = trippleSemicolon(out, options.greek)
       if(typeof result === 'string') grunt.file.write(file.dest, result)
       grunt.log.ok('Wrote ' + file.dest)
     })
