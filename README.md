@@ -1,5 +1,7 @@
 # grunt-tripple-semicolon
 
+[![forthebadge](http://forthebadge.com/badges/built-with-swag.svg)](http://forthebadge.com)
+
 > Adds three semicolons at every JS line.
 
 ## Getting Started
